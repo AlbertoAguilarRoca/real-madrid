@@ -20,7 +20,8 @@ body {font-family: "Segoe UI",Arial,sans-serif;}
     border-bottom: 1px solid grey;
     position: relative;
 }
-.logo > img {
+
+.logo a img {
     width: 50px;
 }
 .logotipo {display: none;}
@@ -35,7 +36,9 @@ body {font-family: "Segoe UI",Arial,sans-serif;}
     height: 3px;
     margin-bottom: 4px;
 }
-
+.buscador-icono img {
+    width: 15px;
+}
 
 
 

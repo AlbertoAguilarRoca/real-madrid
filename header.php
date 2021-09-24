@@ -30,7 +30,7 @@
                 <div class="row">
                     <div class="col">
                         <div class="logo">
-                            <img src="img/real-madrid-c-f.svg">
+                            <a href="index.php"><img src="img/real-madrid-c-f.svg"></a>
                         </div>
                     </div>
                     <div class="col">
@@ -45,14 +45,25 @@
                 <div class="menu">
                     <nav>
                         <ul class="menu-nav">
-                            <li class="menu-nav-element"><a href="#">Inicio</a></li>
+                            <li class="menu-nav-element"><a href="index.php">Inicio</a></li>
                             <li class="menu-nav-element"><a href="#">Futbol</a></li>
                             <li class="menu-nav-element"><a href="#">Baloncesto</a></li>
                             <li class="menu-nav-element"><a href="#">El club</a></li>
-                            <li class="menu-nav-element"><a href="#">Aficionados</a></li>
+                            <li class="menu-nav-element"><a href="aficionado.php">Aficionados</a></li>
                             <li class="menu-nav-element"><a href="#">Estadio</a></li>
                         </ul>
                     </nav>
+                    <ul class="menu-right">
+                            <li class="menu-rigth-element"><a href="#">Entradas</a></li>
+                            <li class="menu-rigth-element"><a href="#">Área Vip</a></li>
+                            <li class="menu-rigth-element"><a href="#">Madridistas</a></li>
+                            <li class="menu-rigth-element"><a href="#">Tour</a></li>
+                            <li class="menu-rigth-element"><a href="#">Tour</a></li>
+                            <li class="menu-rigth-element"><a href="#">Tienda</a></li>
+                    </ul>
+                </div>
+                <div class="buscador-icono">
+                    <img src="img/search-solid.svg">
                 </div>
             </div><!--final div cabecera-->
         </header>
