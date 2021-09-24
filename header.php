@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="css/main.css">
         <!-- NUESTRO CSS -->
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/sorteo.css">
 
     </head>
     <body id="main">
