@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="css/style.css">
 
     </head>
-    <body>
+    <body id="main">
     <!-- CONDICIONAL PARA IE9 E INFERIORES -->
         <!--[if lte IE 9]>
             <p class="browserupgrade">Estás usando un navegador <strong>obsoleto</strong>. Por favor <a href="http://browsehappy.com/">actualiza tu navegador</a>
@@ -27,7 +27,7 @@
         <div class="container">
         <header>
             <div class="cabecera">
-                <div class="row">
+                <div class="row cabecera-logo">
                     <div class="col">
                         <div class="logo">
                             <a href="index.php"><img src="img/real-madrid-c-f.svg"></a>
@@ -37,7 +37,8 @@
                         <p class="logotipo">Real<span>madrid</span></p>
                     </div>
                 </div><!--end row-->
-                <div class="menu-burguer">
+                
+                <div id="menu-icon" class="menu-burguer" onclick="openNav()">
                     <div></div>
                     <div></div>
                     <div></div>
@@ -58,13 +59,23 @@
                             <li class="menu-rigth-element"><a href="#">Área Vip</a></li>
                             <li class="menu-rigth-element"><a href="#">Madridistas</a></li>
                             <li class="menu-rigth-element"><a href="#">Tour</a></li>
-                            <li class="menu-rigth-element"><a href="#">Tour</a></li>
                             <li class="menu-rigth-element"><a href="#">Tienda</a></li>
                     </ul>
+                    <div class="buscador-icono">
+                        <img src="img/search-solid.svg">
+                        <div class="buscador-input">
+                            <input type="text" placeholder="Buscar..." autofocus>
+                        </div>
+                    </div>
+                    <ul class="menu-top">
+                            <li class="menu-top-element"><a href="#">Palmarés</a></li>
+                            <li class="menu-top-element"><a href="#">Fundación</a></li>
+                            <li class="menu-top-element"><a href="#">RM Next</a></li>
+                            <li class="menu-top-element"><a href="#">Regístrate</a></li>
+                            <li class="menu-top-element"><a href="#">Login</a></li>
+                    </ul>
                 </div>
-                <div class="buscador-icono">
-                    <img src="img/search-solid.svg">
-                </div>
+                
             </div><!--final div cabecera-->
         </header>
         </div><!-- end div container -->

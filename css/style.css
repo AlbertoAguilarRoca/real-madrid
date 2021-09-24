@@ -15,16 +15,27 @@ body {font-family: "Segoe UI",Arial,sans-serif;}
 
 /*header movil*/
 
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .cabecera {
-    padding: 10px;
     border-bottom: 1px solid grey;
     position: relative;
+}
+
+.cabecera-logo {
+    padding: 15px 5px;
 }
 
 .logo a img {
     width: 50px;
 }
 .logotipo {display: none;}
+
+/*menu movil*/
+
 .menu-burguer {
     position: absolute;
     top: 28px;
@@ -36,11 +47,94 @@ body {font-family: "Segoe UI",Arial,sans-serif;}
     height: 3px;
     margin-bottom: 4px;
 }
-.buscador-icono img {
+.side-bar-buscador-icono {
+    padding: 15px;
+    position: relative;
+}
+.side-bar-buscador-icono img {
     width: 15px;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    color: white;
 }
 
+.side-bar-buscador-input input[type=text] {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid grey;
+    padding: 10px 0;
+    color: grey;
+}
 
+.side-bar-buscador-input input[type=text]:focus-visible {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid grey;
+}
+
+.side-bar-menu {
+    background: #222;
+    padding-top: 40px;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    transition: 0.3;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 40px;
+    color: white;
+  }
+
+/*elimina la barra de scroll*/
+.side-bar-menu::-webkit-scrollbar {
+    display: none;
+}
+
+.side-bar-menu-nav-element, .side-bar-menu-rigth-element {
+    padding: 15px;
+    border-bottom: 1px solid grey;
+}
+
+.side-bar-menu-nav-element a {
+    text-transform: uppercase;
+    color: grey;
+    display: block;
+}
+
+.side-bar-menu-rigth-element a {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    display: block;
+}
+
+.side-bar-menu-top {
+    padding: 10px 0;
+    background: black;
+}
+
+.side-bar-menu-top-element {
+    padding: 10px;
+}
+
+.side-bar-menu-top-element a {
+    text-transform: uppercase;
+    color: white;
+    display: block;
+}
+
+/*hidden menu desktop*/
+.menu {display: none;}
 
 
 /*/////////////////////////////////////////////////////////////
