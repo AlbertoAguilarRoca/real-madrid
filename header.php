@@ -35,7 +35,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <p class="logotipo">Real<span>madrid</span></p>
+                        <p class="logotipo"><a href="index.php">Real<span>madrid</span></a></p>
                     </div>
                 </div><!--end row-->
                 
@@ -63,8 +63,10 @@
                             <li class="menu-rigth-element"><a href="#">Tienda</a></li>
                     </ul>
                     <div class="buscador-icono">
-                        <img src="img/search-solid.svg">
-                        <div class="buscador-input">
+                        <div id="search-icon" class="buscador-search">
+                        <img src="img/search-solid.svg" onclick="openSearch()">
+                        </div>
+                        <div class="buscador-input" id="buscador-form">
                             <input type="text" placeholder="Buscar..." autofocus>
                         </div>
                     </div>
