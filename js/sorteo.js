@@ -13,4 +13,8 @@ if (numeroGanador==numero) {
     alert("Lo sentimos, esperamos que tengas mas suerte la proxima vez");
 
 }
+ 
 }
+
+
+
