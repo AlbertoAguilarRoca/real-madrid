@@ -15,6 +15,7 @@
         <!-- NUESTRO CSS -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/sorteo.css">
+        <link rel="stylesheet" href="css/login.css">
 
     </head>
     <body id="main">
@@ -75,7 +76,7 @@
                             <li class="menu-top-element"><a href="#">Fundación</a></li>
                             <li class="menu-top-element"><a href="#">RM Next</a></li>
                             <li class="menu-top-element"><a href="#">Regístrate</a></li>
-                            <li class="menu-top-element"><a href="#">Login</a></li>
+                            <li class="menu-top-element"><a href="login.php">Login</a></li>
                     </ul>
                 </div>
                 

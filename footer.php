@@ -32,7 +32,7 @@
                 <li class="side-bar-menu-top-element"><a href="#">Fundación</a></li>
                 <li class="side-bar-menu-top-element"><a href="#">RM Next</a></li>
                 <li class="side-bar-menu-top-element"><a href="#">Regístrate</a></li>
-                <li class="side-bar-menu-top-element"><a href="#">Login</a></li>
+                <li class="side-bar-menu-top-element"><a href="login.php">Login</a></li>
         </ul>
     </div>
 
