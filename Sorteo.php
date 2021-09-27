@@ -10,7 +10,7 @@
 
 
 
-<button onclick="sorteo()"> Sorteo </button>
+<button class="suerte" onclick="sorteo()"> Sorteo </button>
 
 
 
