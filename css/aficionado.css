@@ -1,0 +1,109 @@
+/* CSS */
+
+.mensaje-aficionado {
+    font-size: 20px;
+
+}
+
+.mensaje-caja {
+    padding: 30px;
+    background: grey;
+}
+ 
+.titulo-aficionados{
+    text-align: left;
+    padding-right: 9%;
+    padding-bottom: 20px;
+}
+.subtitulo {
+    font-size: 150%;
+    padding: 30%;
+}
+
+
+.madrid-principal{
+
+    float: right;
+    padding-right: 5%;
+    padding-top: 1%;
+
+}
+
+.containerTabla {
+    padding: 10%;
+}
+
+.carnetfans{
+    float: left;
+    width: 50%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    
+}
+
+.ventajas-carnet {
+    font-size: 170%;
+    text-align: center;
+}
+
+.titulo-ventajas {
+    font-size: 250%;
+    text-align: center;
+}
+
+.imagen-camiseta{
+   
+    border:black 3px solid;
+    width: 30%;
+}
+    .imagen-camiseta2{
+        border:black 3px solid;
+        
+        width: 30%;
+   
+}
+.prueba {
+    
+     display: block;
+margin: auto;
+    text-align: center;
+    
+}
+.comprobador-tallas {
+    font-size: 150%;
+    text-align: center;
+    border: black 1px solid;
+}
+.titulo-comprobador{
+    font-size:200%;
+    text-align: center;
+}
+
+.titulo-equipación{
+    font-size: 250%;
+    text-align: center;
+}
+
+.titulo-partidos{
+    text-align: center;
+    font-size: 300%;
+}
+
+.fecha-partidos{
+    text-align: center;
+    font-size: 200%;
+    padding-bottom: 10%;
+}
+
+.foto-campo{
+    width: 40%;
+    float: right;
+   
+}
+
+.ventajas-carnet-lista{
+    font-size: 150%;
+   text-align: center;
+   padding-bottom: 10%;
+ 
+}

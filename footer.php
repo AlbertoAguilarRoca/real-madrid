@@ -48,7 +48,6 @@
 
         <!-- PARA TU JS -->
         <script src="js/main.js"></script>
-        <script src="js/aficionado.js"></script>
         <script src="js/sorteo.js"></script>
         <script src="js/area-privada.js"></script>
     </body>

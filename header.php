@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/sorteo.css">
         <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" href="css/aficionado.css">
 
     </head>
     <body id="main">

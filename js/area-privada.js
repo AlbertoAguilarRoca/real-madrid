@@ -8,7 +8,7 @@ function validateLogin() {
             window.location.replace('area-privada.php');
         } else {
 
-            while (mensaje != contrasena || contador > 0) {
+            while (mensaje != contrasena && contador > 0) {
               mensaje = prompt("Contraseña errónea, vuelve a introducirla. Te quedan "+contador+" intentos.");
               contador--;
               console.log(mensaje); 
@@ -17,12 +17,9 @@ function validateLogin() {
             
         }
 
-
         if (mensaje == contrasena) {
             window.location.replace('area-privada.php');
-        }
-
-        if (contador < 1) {
+        } else {
             window.location.replace('index.php');
         }
 

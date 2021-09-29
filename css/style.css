@@ -136,6 +136,85 @@ body {font-family: "Segoe UI",Arial,sans-serif;}
 /*hidden menu desktop*/
 .menu {display: none;}
 
+/*HOME*/
+
+.noticia-principal {
+    position: relative;
+}
+
+.noticia-block {
+    position: absolute;
+    background: rgba(0,0,0,0.4);
+    bottom: 0;
+    padding: 20px;
+    width: 100%;
+}
+
+.noticia-texto {
+    text-transform: uppercase;
+    color: white;
+    text-align: left;
+}
+
+.titulo-home {
+    text-align: left;
+}
+
+.titulo-home a {
+    color: white;
+}
+
+.partido-titulo {
+    text-align: center;
+}
+
+.partido {
+    padding: 20px 10px;
+    background-color: rgb(180, 179, 179);
+    border-right-color: black;
+    margin-top: 20px;
+}
+
+#logo_partido1 div img {
+    border-right: 1px solid black;
+    float: right;
+}
+
+.publi {
+    padding: 20px 0;
+}
+
+.boton-sorteo {
+    margin-top: 15px;
+    background: #004996;
+    border: none;
+    transition: 0.5s;
+    width: 100%;
+}
+
+.boton-sorteo:hover {
+    background: #003c7c;
+}
+
+.boton-sorteo a {
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+    display: block;
+}
+
+.titulo-noticia {
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.noticia-contenedor p {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+    text-align: left;
+}
 
 /*/////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////
