@@ -18,7 +18,23 @@ p   {
 
 }
 
-button {
-
-
+.boton-sorteo {
+    margin-top: 15px;
+    background: #004996;
+    border: none;
+    transition: 0.5s;
+    
 }
+
+.boton-sorteo:hover {
+    background: #003c7c;
+}
+
+.boton-sorteo a {
+    color: white;
+    font-weight: bold;
+    width: 50%;
+    padding: 10px;
+    display: block;
+}
+

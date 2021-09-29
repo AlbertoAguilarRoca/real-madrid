@@ -1,32 +1,32 @@
 
-function sorteo(){
-var numeroGanador=5;
-let suerte = document.querySelector(".suerte")
-suerte.disabled = false;
+function sorteo(){  //funcion que realiza la comprobacion del sorteo
+var numeroGanador=5; // recoge el numero ganador en esta variable
+let suerte = document.querySelector(".suerte") // almacena en una variable si se ha usado el boton
+suerte.disabled = false; // para deshabilitar el boton del sorteo lo ponemos en false.
 
 
-var numero=prompt("Introduzca un numero");
+var numero=prompt("Introduzca un numero"); 
 
-if (numero == undefined) {
+if (numero == undefined) { // comprueba que la variable numero introducida no esta vacia.
 
     
 } else {
 
-    suerte.disabled = true;
+    suerte.disabled = true; // en caso de que el boton haya sido usado lo desactiva.
     
 }
 
 
-if (numeroGanador==numero) {
+if (numeroGanador==numero) { 
     alert("Has ganado el sorteo!!!");
     
-} else {
+}else if(numero == undefined) {
 
+    alert("No ha introducido ningun numero");
+
+}else{
+ 
     alert("Lo sentimos, esperamos que tengas mas suerte la proxima vez");
 
 }
- 
 }
-
-
-

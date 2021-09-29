@@ -1,6 +1,8 @@
 <?php include 'header.php';?>
 
 <!-- Aquí va el cuerpo de la web, después del <header> -->
+
+
 <script src="js/sorteo.js"></script>
 
  
@@ -10,13 +12,14 @@
 
 
 
-<button class="suerte" onclick="sorteo()"> Sorteo </button>
+
 
 
 
 <div class="camiseta"><img src="img/camiseta.jpg"></div>
 
 
+<button class="boton-sorteo suerte" onclick="sorteo()"> Sorteo </button>
 
 
 
