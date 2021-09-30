@@ -1,14 +1,44 @@
 /* CSS */
 
 .mensaje-aficionado {
+    color: white;
     font-size: 20px;
+    text-align: left;
+}
 
+#mensaje {
+    border-top: 1px solid white;
+    padding-top: 10px;
+    margin-top: 15px;
 }
 
 .mensaje-caja {
     padding: 30px;
-    background: grey;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    width: 500px;
 }
+
+.mensaje-caja h2 {
+    color: white;
+    padding-bottom: 15px;
+}
+
+.boton-aficionado {
+    background: #004996;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition: 0.5s;  
+}
+    
+.boton-aficionado:hover {
+    background: #003c7c;
+}
+
  
 .titulo-aficionados{
     text-align: left;
@@ -20,13 +50,9 @@
     padding: 30%;
 }
 
-
 .madrid-principal{
-
-    float: right;
-    padding-right: 5%;
-    padding-top: 1%;
-
+    padding-bottom: 20px;
+    position: relative;
 }
 
 .containerTabla {

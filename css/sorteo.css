@@ -1,40 +1,40 @@
 /* CSS */
 
+.cuerpo-sorteo {
+    padding-bottom: 50px;
+}
+
 h1  {
-
     text-align: center;
-
 }
 
 p   {
     text-align: center;
 }
 
-.camiseta img {
+.camiseta {
+    padding-bottom: 20px;
+}
 
+.camiseta img {
     display: block;
     margin: auto;
-
-
 }
 
 .boton-sorteo {
     margin-top: 15px;
     background: #004996;
     border: none;
-    transition: 0.5s;
-    
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    width: 250px;
+    display: block;
+    margin: auto;
+    transition: 0.5s;  
 }
 
 .boton-sorteo:hover {
     background: #003c7c;
-}
-
-.boton-sorteo a {
-    color: white;
-    font-weight: bold;
-    width: 50%;
-    padding: 10px;
-    display: block;
 }
 

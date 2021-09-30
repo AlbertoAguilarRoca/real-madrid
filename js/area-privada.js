@@ -4,23 +4,20 @@ function validateLogin() {
     var contador = 2;
     var mensaje = "";
 
-        if (password == contrasena) {
-            window.location.replace('area-privada.php');
-        } else {
+    if (password == contrasena) {
+        window.location.replace('area-privada.php');
+    } else {
 
-            while (mensaje != contrasena && contador > 0) {
-              mensaje = prompt("Contraseña errónea, vuelve a introducirla. Te quedan "+contador+" intentos.");
-              contador--;
-              console.log(mensaje); 
-              console.log(contador);
-            }
-            
+        while (mensaje != contrasena && contador > 0) {
+            mensaje = prompt("Contraseña errónea, vuelve a introducirla. Te quedan " + contador + " intentos.");
+            contador--;
         }
 
         if (mensaje == contrasena) {
             window.location.replace('area-privada.php');
         } else {
             window.location.replace('index.php');
-        }
+        }//end if           
+    }//end if
 
-}
+}//end function

@@ -7,19 +7,17 @@
 <h1 class="titulo-aficionados">Club De Fans</h1>
 
 <!-- imagen principal -->
-<img src="img/Real_Madrid_Fans.png" class="madrid-principal">
+    <div class="madrid-principal">
+        <img src="img/aficionados.jpg">
 
-    <div class="row">
-            <div class="col">
-                <div class="mensaje-caja">
-
-                <h2>Comprueba que tan buen aficionado eres</h2>
-                <button onclick="nivelAficionado()">Comprueba tu nivel</button>
-                    <p class="mensaje-aficionado" id="mensaje"></p>
-                    <p class="mensaje-aficionado" id="nivel-aficionado"></p>
-                </div>
-            </div>
+        <div class="mensaje-caja">
+            <h2>Comprueba que tan buen aficionado eres</h2>
+            <button class="boton-aficionado" onclick="nivelAficionado()">Comprueba tu nivel</button>
+            <p class="mensaje-aficionado" id="mensaje"></p>
+            <p class="mensaje-aficionado" id="nivel-aficionado"></p>
+        </div>
     </div>
+
     <!-- imagen carnet de socio-->
     <img src="img/Carnet_Madrid.png" class="carnetfans">
         </br>

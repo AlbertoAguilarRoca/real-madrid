@@ -42,7 +42,7 @@
                         Haz click en el botón y prueba suerte ¡Es muy fácil!
                     </p>
                         <div class="camiseta"><img src="img/camiseta.jpg"></div>
-                        <button class="boton-sorteo"><a href="Sorteo.php">Sorteo</a></button>
+                        <button class="btn-sorteo"><a href="Sorteo.php">Sorteo</a></button>
                 </div>
 
                 <div class="publi">

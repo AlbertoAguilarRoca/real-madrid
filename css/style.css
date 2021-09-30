@@ -184,7 +184,7 @@ body {font-family: "Segoe UI",Arial,sans-serif;}
     padding: 20px 0;
 }
 
-.boton-sorteo {
+.btn-sorteo {
     margin-top: 15px;
     background: #004996;
     border: none;
@@ -192,11 +192,11 @@ body {font-family: "Segoe UI",Arial,sans-serif;}
     width: 100%;
 }
 
-.boton-sorteo:hover {
+.btn-sorteo:hover {
     background: #003c7c;
 }
 
-.boton-sorteo a {
+.btn-sorteo a {
     color: white;
     font-weight: bold;
     width: 100%;
@@ -272,6 +272,10 @@ body {font-family: "Segoe UI",Arial,sans-serif;}
 
 .menu-nav li, .menu-right li, .menu-top li {
     display: inline-block;
+}
+
+.menu-nav li a, .menu-right li a, .menu-top li a {
+    font-size: 13px;
 }
 
 .menu-nav li a {
