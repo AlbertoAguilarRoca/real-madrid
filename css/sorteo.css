@@ -38,3 +38,19 @@ p   {
     background: #003c7c;
 }
 
+/*Input*/
+
+.formulario-sorteo {
+    padding: 20px 0;
+}
+
+.formulario-sorteo-input {
+    width: 350px;
+    margin: auto;
+    display: block;
+}
+
+
+#resultado-sorteo {
+    padding-top: 20px;
+}
