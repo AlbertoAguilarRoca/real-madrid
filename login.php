@@ -16,7 +16,7 @@
             <input id="passwordUser" type="password" placeholder="Contraseña" name="password">
             <input type="submit" value="Iniciar sesión" onclick="login()">
 
-            <p id="resultado-validacion" class="resultado-val"></p>
+            <p id="mensajeLogin" class="resultado-val"></p>
             
             <p class="registro"><a href="#">¿No tienes cuenta? Regístrate</a></p>
         </div>

@@ -7,10 +7,11 @@ function login() {
     var passwordInputValor = document.getElementById("passwordUser").value;
     //Contraseña que se debe escribir
     var contrasena = "password";
-    var mensaje = "";
+
     //variable booleana
     var loginValido = false;
-    var resultado = document.getElementById("resultado-validacion");
+    //parrafo de html1
+    var resultado = document.getElementById("mensajeLogin");
 
     if(passwordInputValor == contrasena) {
         //Si la contraseña es válida, cambia el valor de la var
@@ -21,28 +22,16 @@ function login() {
         //si loginValido es true, redirecciona hacia areaPrivada
         window.location.replace('area-privada.php');
     } else {
-        //Envia un mensaje de error en una etiqueta p
-        resultado.innerText = "Contraseña erronea, siga intentándolo";
+        //Envia un mensaje de error en una etiqueta p y le cambia el color
+        contador--;
+        resultado.innerText = "Contraseña erronea, te quedan "+contador+" intentos.";
         resultado.style.color = "red";
+    }//end if
+
+    if(contador == 0) {
+        //si el contador llega a cero, redirecciona hacia index
+        window.location.replace('index.php');
     }
 
-
-
-    /*if (passwordInputValor == contrasena) {
-        loginValido = true;
-        window.location.replace('area-privada.php');
-    } else {
-
-        while (mensaje != contrasena && contador > 0) {
-            mensaje = prompt("Contraseña errónea, vuelve a introducirla. Te quedan " + contador + " intentos.");
-            contador--;
-        }
-
-        if (mensaje == contrasena) {
-            window.location.replace('area-privada.php');
-        } else {
-            window.location.replace('index.php');
-        }//end if           
-    }//end if*/
 
 }//end function
