@@ -1,3 +1,4 @@
+
 function nivelAficionado() {
     var nombre = prompt("Introduzca su nombre: ");
     var edad = prompt("¿Desde cuándo eres socio?");
@@ -18,4 +19,25 @@ function nivelAficionado() {
     } else {
         document.getElementById("nivel-aficionado").innerHTML = "WOW! Eres un aficionado de nivel Premium.";
     }
+
+    
+}
+
+function bienvenidoAficionado() {
+ 
+    var nombrefor = document.getElementById("nombreAficionado").value;
+    var aniosfor = document.getElementById("edadAficionado").value;
+
+    console.log(nombrefor);
+    console.log(aniosfor);
+
+    mostrarMensaje(nombrefor,aniosfor);
+
+    
+}
+
+function  mostrarMensaje(nombrefor,aniosfor){
+    
+
+
 }

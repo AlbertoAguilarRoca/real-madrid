@@ -15,6 +15,14 @@
             <button class="boton-aficionado" onclick="nivelAficionado()">Comprueba tu nivel</button>
             <p class="mensaje-aficionado" id="mensaje"></p>
             <p class="mensaje-aficionado" id="nivel-aficionado"></p>
+                
+               <label type="text" >nombre</label>
+               <input type="text" placeholder="Introduzca su nombre" id="nombreAficionado">
+
+               <label type="text" >Años</label>
+               <input type="text" placeholder="Introduzca años como aficionado" id="edadAficionado">
+               <button onclick="bienvenidoAficionado()">Enviar</button>
+            
         </div>
     </div>
 
