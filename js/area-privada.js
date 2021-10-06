@@ -1,23 +1,37 @@
-function validateLogin() {
-    var password = document.getElementById("passwordUser").value;
-    var contrasena = "password";
-    var contador = 2;
-    var mensaje = "";
+//Variable contador
+var contador = 3;
 
-    if (password == contrasena) {
+
+function login() {
+    //valor de la contraseña del input
+    var passwordInputValor = document.getElementById("passwordUser").value;
+    //Contraseña que se debe escribir
+    var contrasena = "password";
+
+    //variable booleana
+    var loginValido = false;
+    //parrafo de html1
+    var resultado = document.getElementById("mensajeLogin");
+
+    if(passwordInputValor == contrasena) {
+        //Si la contraseña es válida, cambia el valor de la var
+        loginValido = true;
+    }
+
+    if(loginValido) {
+        //si loginValido es true, redirecciona hacia areaPrivada
         window.location.replace('area-privada.php');
     } else {
-
-        while (mensaje != contrasena && contador > 0) {
-            mensaje = prompt("Contraseña errónea, vuelve a introducirla. Te quedan " + contador + " intentos.");
-            contador--;
-        }
-
-        if (mensaje == contrasena) {
-            window.location.replace('area-privada.php');
-        } else {
-            window.location.replace('index.php');
-        }//end if           
+        //Envia un mensaje de error en una etiqueta p y le cambia el color
+        contador--;
+        resultado.innerText = "Contraseña erronea, te quedan "+contador+" intentos.";
+        resultado.style.color = "red";
     }//end if
+
+    if(contador == 0) {
+        //si el contador llega a cero, redirecciona hacia index
+        window.location.replace('index.php');
+    }
+
 
 }//end function
