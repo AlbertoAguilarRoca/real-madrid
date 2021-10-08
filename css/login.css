@@ -64,6 +64,56 @@
     font-weight: bold;
 }
 
+/*ZONA DE AREA PRIVADA*/
+
+.jugadores{
+    padding: 20px 0;
+}
+
+.jugadores h2 {
+    padding-bottom: 15px;
+    color: #004996;  
+}
+
+.jugadores > p {
+    text-align: left;
+}
+
+.inputjugador {
+    padding: 5px;
+    display: block;
+    width: 300px;
+    margin-bottom: 10px; 
+}
+
+.inputjugador:focus-visible {
+    outline: none;
+}
+
+.jugadores button {
+    color: white;
+    font-weight: bold;
+    border: none;
+    transition: 0.5s;
+    padding: 10px 20px;
+}
+
+.delete-boton {
+    background-color: red;
+}
+
+.add-boton {
+    background-color: rgb(27, 177, 27);
+}
+
+.subtitulo-lista {
+    margin-top: 15px;
+    border-top: 1px solid grey;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+
 /*/////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////
@@ -92,4 +142,6 @@
     margin: auto;
 }
 
-}
+/*ZONA DE AREA PRIVADA ESCRITORIO*/
+
+}/*FINAÑ*/
