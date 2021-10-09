@@ -12,7 +12,7 @@
 
         <div class="mensaje-caja">
             <h2>Comprueba que tan buen aficionado eres</h2>
-            <button class="boton-aficionado" onclick="nivelAficionado()">Comprueba tu nivel</button>
+            <button class="boton-aficionado" onclick="bienvenidoAficionado()">Comprueba tu nivel</button>
             <p class="mensaje-aficionado" id="mensaje"></p>
             <p class="mensaje-aficionado" id="nivel-aficionado"></p>
             
@@ -25,8 +25,8 @@
               
                <p style="color: white" id="mensajeBienvenida"></p>
                <p  style="color: white" id="tipoAficionado"></p>
-               <button onclick="bienvenidoAficionado()">Enviar</button>
-                
+              <!-- <button onclick="bienvenidoAficionado()">Enviar</button>
+-->
         </div>
     </div>
 
