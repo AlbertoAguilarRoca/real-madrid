@@ -39,6 +39,24 @@
     background: #003c7c;
 }
 
+.mensaje-caja-label {
+    display: block;
+    padding: 10px 0;
+    color: white;
+}
+
+.mensaje-caja input {
+    padding: 5px;
+    border: none
+}
+
+.mensaje-caja input:focus-visible {
+    outline: none;
+    border: none;
+}
+
+/*luis*/
+
  
 .titulo-aficionados{
     text-align: left;

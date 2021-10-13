@@ -12,21 +12,15 @@
 
         <div class="mensaje-caja">
             <h2>Comprueba que tan buen aficionado eres</h2>
+            <label class="mensaje-caja-label" type="text">Nombre</label>
+            <input type="text" placeholder="Ej: Emilio García" id="nombreAficionado">
+            <label class="mensaje-caja-label" type="text">Introduce la fecha de comienzo en el club</label>
+            <p><input type="date" id="fecha" max="<?php echo date('Y-m-d'); ?>"></p>
+
             <button class="boton-aficionado" onclick="bienvenidoAficionado()">Comprueba tu nivel</button>
             <p class="mensaje-aficionado" id="mensaje"></p>
             <p class="mensaje-aficionado" id="nivel-aficionado"></p>
-            
-                
-               <label type="text">nombre</label>
-               <input type="text" placeholder="Introduzca su nombre" id="nombreAficionado">
-
-               <label type="text">Introduce la fecha de comienzo en el club</label>
-               <input type="date" id="fecha">
               
-               <p style="color: white" id="mensajeBienvenida"></p>
-               <p  style="color: white" id="tipoAficionado"></p>
-              <!-- <button onclick="bienvenidoAficionado()">Enviar</button>
--->
         </div>
     </div>
 
