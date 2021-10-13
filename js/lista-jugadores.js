@@ -1,6 +1,6 @@
 /*Creamos un array de jugadores vacio*/
 const jugadores = [];
-var parrafoJugadores= document.getElementById("jugadoresFav");
+var parrafoJugadores = document.getElementById("jugadoresFav");
 var formValor =  document.getElementById("jugadorForm");
 
 //Si la lista está vacia, lo mostramos en mensaje
@@ -12,7 +12,6 @@ function addJugador(){
   var jugador = formValor.value;
   //Añadimos el jugador introducido al array
   jugadores.push(jugador);
-
   //Mostramos el jugador en el parrafo
   mostrarListaJugadores();
 }
@@ -25,14 +24,11 @@ function borrarJugador(){
     if (jugadores[i] == formValor.value) {
       //Borramos el jugador en la posición encontrada
       jugadores.splice(i,1);
-
       //Mostramos la nueva lista de jugadores
       mostrarListaJugadores();
-
       //Cambiamos la variable a true
       jugadorEncontrado = true;
     }
-   
   }//END for
 
   //Si no encuentra el jugador, muestra un mensaje de alerta
@@ -41,7 +37,7 @@ function borrarJugador(){
   }
 
   listaVacia();
-
+  
 }
 
 //Funcion para mostrar la lista de jugadores

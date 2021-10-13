@@ -4,11 +4,11 @@
     padding-bottom: 50px;
 }
 
-h1  {
+.cuerpo-sorteo h1  {
     text-align: center;
 }
 
-p   {
+.cuerpo-sorteo p   {
     text-align: center;
 }
 
@@ -48,9 +48,12 @@ p   {
     width: 350px;
     margin: auto;
     display: block;
+    padding: 10px;
 }
 
 
 #resultado-sorteo {
     padding-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
 }

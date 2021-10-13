@@ -1,27 +1,32 @@
 
 function sorteo(){  //funcion que realiza la comprobacion del sorteo
-    var numeroGanador= Math.floor(Math.random() * 11); // Numero ganador aleatorio entre 0 y 10
-    let suerte = document.querySelector(".suerte") // almacena en una variable si se ha usado el boton
-    suerte.disabled = false; // para deshabilitar el boton del sorteo lo ponemos en false.
-    var numero = document.getElementById("sorteo-input").value;//Almacena cada valor del input 
-    var ganador = false; // variable booleana por defecto es false
+    // Numero ganador aleatorio entre 1 y 10
+    var numeroGanador= Math.floor(Math.random() * 10) + 1; 
+    // almacena en una variable el boton
+    let suerte = document.querySelector(".suerte");
+    //Almacena el valor del input introducido
+    var numero = document.getElementById("sorteo-input").value;
+    // variable booleana por defecto es false
+    var ganador = false; 
 
-    if (numero != undefined) { // comprueba que la variable numero introducida no esta vacia.
-        suerte.disabled = true; // en caso de que el boton haya sido usado lo desactiva.
-        suerte.style.cursor = "not-allowed";
-    }
 
-    if (numero == numeroGanador) {
-        ganador = true;
-    }
-
-    //Validacion para mostrar mensaje de error si se introducen nuúmeros
-    if (isNaN(numero)) {
-        document.getElementById("resultado-sorteo").innerHTML = "Para participar en el sorteo debe introducir un número entero.";
+    //Validacion para mostrar mensaje de error si se introducen números incorrectos
+    if (isNaN(numero) || numero == "" || numero < 1 || numero > 10) {
+        document.getElementById("resultado-sorteo").innerHTML = "Para participar en el sorteo debe introducir un número del 1 al 10.";
     } else {
+
+        //Si el numero introducido coincide, cambia a true
+        if (numero == numeroGanador) {
+            ganador = true;
+        }
+
+        // Una vez se ha participado se deshabilita el boton
+        suerte.disabled = true; 
+        suerte.style.cursor = "not-allowed";
+
+        //En base al valor booleano, se mostrará el mensaje correspondiente
         mostrarMensaje(ganador);
-    }
-    
+    }   
 
 }//end function
 
