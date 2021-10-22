@@ -28,7 +28,7 @@
 
 .boton-aficionado {
     background: #004996;
-    border: none;
+    border-color: #004996;
     color: white;
     font-weight: bold;
     padding: 10px;
@@ -52,6 +52,113 @@
 
 .mensaje-caja input:focus-visible {
     outline: none;
+    border: none;
+}
+
+/*COMPRA DE ENTRADAS*/
+
+.entradas-lista {
+    padding: 15px;
+}
+
+.entradas-lista h2 {
+    padding-bottom: 10px;
+}
+
+.carrito-entradas {
+    border-left: 1px solid #004996;
+    padding: 15px;
+}
+.entrada {
+    padding: 10px;
+    position: relative;
+    border-bottom: 1px solid black;
+}
+.entrada h3 {
+    color: rgb(139, 139, 139);
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.id-entrada {
+    position: absolute;
+    top: 20px;
+    right: 60px;
+}
+
+.id-entrada::before {
+    content: "id: ";
+}
+
+.datos-entrada {
+    padding-bottom: 5px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.precio-entrada {
+    position: absolute;
+    font-size: 30px;
+    color: #004996;
+    font-weight: bold;
+    bottom: 7px;
+    right: 60px;
+    margin-bottom: 0;
+}
+
+.precio-entrada::after {
+    content: " €";
+}
+
+.selectEntradas {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.selectEntradas, .cantidad {
+    padding: 10px;
+}
+
+.cantidad {
+    width: 120px;
+}
+
+/*carrito*/
+
+.entrada-carro .entrada {
+    padding: 0;
+    padding-top: 10px;
+}
+
+.precio-carrito {
+    position: absolute;
+    bottom: 14px;
+    margin-bottom: 0;
+    right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.precio-carrito::after {
+    content: " €";
+}
+
+.boton-cerrar {
+    position: absolute;
+    top: 13px;
+    right: 15px;
+}
+
+.cantidadEntrada::before {
+    content: "Cantidad: ";
+}
+
+.botonCompra {
+    padding-top: 15px;
+}
+
+.botonCompra button {
     border: none;
 }
 

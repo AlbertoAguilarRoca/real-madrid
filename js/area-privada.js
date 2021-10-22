@@ -1,7 +1,6 @@
 //Variable contador
 var contador = 3;
 
-
 function login() {
     //valor de la contraseña del input
     var passwordInputValor = document.getElementById("passwordUser").value;
