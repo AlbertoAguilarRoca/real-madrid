@@ -1,7 +1,7 @@
 <?php include 'header.php';?>
 
 <!-- imagen de cabecera -->
-
+<body onload="guardado()">
 <div class="container">
     <div class="slide-login">
         <img src="img/estadio-bernabeu.jpg">
@@ -28,9 +28,13 @@
    <p>Precio entradas. <input type="number" id="precio" required></p>
    <p>Numero de entradas disponibles <input type="number" id="num" min = "1" max="10" required ></p>
 
-<p><input type="submit" value="Pulse para comprar entrada" onclick="crearPartidos()"></p>
+<p><input type="submit" value="Pulse para mostrar" onclick="mostrarEntradas()"></p>
 <p><input type="submit" value="Agregue el partido al array" onclick="agregarPartido()"></p>
+<p><input type="number" id="borrar" placeholder="Numero id a borrar"><input type="submit" value="Pulse para borrar el partido seleccionado" onclick="borrarPartido()"></p>
 
+<div id="partidos" class="partidos-disponibles">
+                        <!-- aqui se crean las entradas -->
+ </div>
    
 
 </div>
@@ -41,5 +45,5 @@
 <!-- End de la web -->
 
 <script src="js/lista-jugadores.js"></script>
-
+</body>
 <?php include 'footer.php';?>

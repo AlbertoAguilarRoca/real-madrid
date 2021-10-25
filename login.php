@@ -1,7 +1,7 @@
 <?php include 'header.php';?>
 
 <!-- imagen de cabecera -->
-
+<body onload="guardado()">
 <div class="container">
     <div class="slide-login">
         <img src="img/estadio-bernabeu.jpg">
@@ -26,5 +26,5 @@
 
 
 <!-- End de la web -->
-
+</body>
 <?php include 'footer.php';?>

@@ -19,7 +19,7 @@ function bienvenidoAficionado() {
 function mostrarMensajeBienvenida(nombrefor, tiempo) { 
 
     // guardamos en la variable idioma el idioma de nuestro navegador para trabajar con ella.
-    var idioma = navigator.language; 
+    var idioma = navigator.language;
     var mensaje = document.getElementById("mensaje");
     
     // comprueba el tipo de idioma y en funcion de este muestra un mensaje u otro.
