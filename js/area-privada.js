@@ -6,6 +6,9 @@ var contador = 3;
 
 
 
+<<<<<<< HEAD
+>>>>>>> 2ef044bcfebbff9967f12d61c9b91db792b61f60
+=======
 >>>>>>> 2ef044bcfebbff9967f12d61c9b91db792b61f60
 function login() {
     //valor de la contraseña del input
