@@ -18,8 +18,24 @@
         <h3 class="subtitulo-lista">Mi lista:</h3>
         <p id="jugadoresFav"></p>
     </div>
+    <!-- Nuevo formulariod e lista entradas -->
+<div>
+    <h3>Entradas:</h3>
+   <p>Fecha del partido. <input type="date" id="fecha" required></p>
+   <p>Hora del partido. <input type="time" id="hora" required></p>
+   <p>Titulo del partido.<input type="text" id="titulo" required></p>
+   <p>Lugar del partido. <input type="text" id="lugar"required></p>
+   <p>Precio entradas. <input type="number" id="precio" required></p>
+   <p>Numero de entradas disponibles <input type="number" id="num" min = "1" max="10" required ></p>
 
-</div> <!-- fin de container -->
+<p><input type="submit" value="Pulse para comprar entrada" onclick="crearPartidos()"></p>
+<p><input type="submit" value="Agregue el partido al array" onclick="agregarPartido()"></p>
+
+   
+
+</div>
+
+ <!-- fin de container -->
 
 
 <!-- End de la web -->
