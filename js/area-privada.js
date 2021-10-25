@@ -13,7 +13,7 @@ var contador = 3;
 function login() {
     //valor de la contraseña del input
     var passwordInputValor = document.getElementById("passwordUser").value;
-    //Contraseña que se debe escribir
+    //Contraseña que se debe escribi
     var contrasena = "password";
     var usario= document.getElementById("nameUser").value;
     //variable booleana
