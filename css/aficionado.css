@@ -162,6 +162,17 @@
     border: none;
 }
 
+.precioTotal {
+    padding-top: 10px;
+}
+
+.precioTotal p {
+    text-align: right;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
 /*luis*/
 
  

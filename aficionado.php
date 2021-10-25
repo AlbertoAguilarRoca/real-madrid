@@ -138,6 +138,9 @@
                     <div class="entrada-carro" id="carrito">
                         <!-- aqui van las entradas del carrito -->
                     </div>
+                    <div class="precioTotal">
+                        <p id="precioCarrito"></p>
+                    </div>
                     <div class="botonCompra">
                         <button class="boton-aficionado">Finalizar compra</button>
                     </div>

@@ -1,15 +1,6 @@
 //Variable contador
 var contador = 3;
 
-<<<<<<< HEAD
-=======
-
-
-
-<<<<<<< HEAD
->>>>>>> 2ef044bcfebbff9967f12d61c9b91db792b61f60
-=======
->>>>>>> 2ef044bcfebbff9967f12d61c9b91db792b61f60
 function login() {
     //valor de la contraseña del input
     var passwordInputValor = document.getElementById("passwordUser").value;
@@ -76,7 +67,7 @@ var tituloticket =document.getElementById("titulo").value
 var lugarticket =document.getElementById("lugar").value;
 var precioticket =document.getElementById("precio").value;
 var numeroticket =document.getElementById("num").value;
-//
+
 
 var random = (Math.random() * 100);
 var redon = Math.round(random);
@@ -103,7 +94,5 @@ function mostrarPartidos() {
         console.log(Object.values(entradasPart[i]))
     }
         
-    }
-
-    
 }
+
