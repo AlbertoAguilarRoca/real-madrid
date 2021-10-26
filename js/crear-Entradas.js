@@ -39,12 +39,20 @@ var entrada= new Partidos(fechatikect,horaticket,tituloticket,lugarticket,
 
 }
 
+function guardararray(){
+
+    for (var i = 0; i < entradas.length; i++) {
+
+    localStorage.setItem("partidos", JSON.stringify(entradas));
+}
+}
+
 function agregarPartido() {
     var nuevoPartido = crearPartidos();
 
     entradas.push(nuevoPartido);
     console.log(entradas.join(" ,"));
-    localStorage.setItem("partidos", JSON.stringify(entradas));
+    guardararray();
 }
 
 
@@ -115,11 +123,9 @@ function agregarPartido() {
 
            numPartidos--;
                 
-            }else{
-
-            }
 
             
         }
+    }
         return numPartidos;
     }
