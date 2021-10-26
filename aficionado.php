@@ -198,6 +198,5 @@
 </div><!-- end container -->
 <!-- End de la web -->
 <!-- Script -->
-<script src="js/carrito-entradas.js"></script>
-<script src="js/aficionado.js"></script>
+
 <?php include 'footer.php';?>

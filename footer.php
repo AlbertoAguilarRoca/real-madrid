@@ -47,6 +47,8 @@
         <script src="js/sorteo.js"></script>
         <script src="js/area-privada.js"></script>
         <script src="js/crear-Entradas.js"></script>
+        <script src="js/carrito-entradas.js"></script>
+        <script src="js/aficionado.js"></script>
         
     </body>
 </html>

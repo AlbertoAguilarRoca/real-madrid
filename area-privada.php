@@ -19,7 +19,7 @@
         <link rel="stylesheet" href="css/aficionado.css">
 
     </head>
-    <body id="main" onload="guardado()">
+    <body id="main" onload="mostrarEntradas()">
     <!-- CONDICIONAL PARA IE9 E INFERIORES -->
         <!--[if lte IE 9]>
             <p class="browserupgrade">Estás usando un navegador <strong>obsoleto</strong>. Por favor <a href="http://browsehappy.com/">actualiza tu navegador</a>
@@ -103,28 +103,47 @@
         <h3 class="subtitulo-lista">Mi lista:</h3>
         <p id="jugadoresFav"></p>
     </div>
-    <!-- Nuevo formulariod e lista entradas -->
+    <!-- Nuevo formulario e lista entradas -->
 <div>
-    <h3>Entradas:</h3>
+    <h3>Crear / Borrar entradas</h3>
     <p>Selecciona la entrada y bórrala</p>
                     
-        <select id="selectorEntradas" class="selectEntradas">
+    <select id="selectorEntradas" class="selectEntradas">
 
-        </select>
-   <p>Fecha del partido: <input type="date" id="fecha" required></p>
-   <p>Hora del partido: <input type="time" id="hora" required></p>
-   <p>Titulo del partido: <input type="text" id="titulo" required></p>
-   <p>Lugar del partido: <input type="text" id="lugar"required></p>
-   <p>Precio entradas: <input type="number" id="precio" required></p>
-   <p>Número de entradas disponibles: <input type="number" id="num" min = "1" max="10" required ></p>
-   <p>Identificador: <input type="text" id="identificador"required></p>
-<p><input type="submit" value="Pulse para mostrar" onclick="mostrarEntradas()"></p>
-<p><input type="submit" value="Agregue el partido al array" onclick="agregarPartido()"></p>
-<p><input type="number" id="borrar" placeholder="Numero id a borrar"><input type="submit" value="Pulse para borrar el partido seleccionado" onclick="borrarPartido()"></p>
+    </select>
 
-<div id="partidos" class="partidos-disponibles">
-                        <!-- aqui se crean las entradas -->
- </div>
+    <button class="boton-aficionado" onclick="borrarPartido()">Borrar entrada</button>
+
+    <h3>A través del siguiente formulario podrá generar nuevas entradas.</h3>
+
+   <label class="labelEntradas">Fecha del partido</label>
+   <input type="date" id="fecha" required>
+
+   <label class="labelEntradas">Hora del partido</label>
+    <input type="time" id="hora" required>
+
+   <label class="labelEntradas">Titulo del partido</label>
+   <input type="text" id="titulo" required>
+
+   <label class="labelEntradas">Lugar del partido</label>
+   <input type="text" id="lugar"required>
+
+   <label class="labelEntradas">Precio de la entrada</label>
+   <input type="number" id="precio" required>
+
+   <label class="labelEntradas">Total de entradas disponibles</label>
+   <input type="number" id="num" min = "1" max="10" required>
+
+   <label class="labelEntradas">Identificador</label>
+   <input type="text" id="identificador"required>
+
+    <div class="subirEntrada">
+        <button  class="boton-aficionado" onclick="agregarPartido()">Agregar entrada</button>
+    </div>
+
+    <div id="entradas-disponibles" class="entradas-producto">
+        <!-- aqui se crean las entradas -->
+    </div>
    
 
 </div>
@@ -135,5 +154,4 @@
 <!-- End de la web -->
 
 <script src="js/lista-jugadores.js"></script>
-</body>
 <?php include 'footer.php';?>

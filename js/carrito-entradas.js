@@ -1,97 +1,5 @@
 
-/*const entrada1 = {
-    fecha:"24/10/2021",
-    hora:"20:00",
-    titulo:"Barcelona - Real Madrid",
-    lugar: "Camp Nou",
-    precio: 75.00,
-    total_entradas: 4000,
-    id: "BarReal"
-};
-
-const entrada2 = {
-    fecha:"31/10/2021",
-    hora:"16:00",
-    titulo:"Real Madrid - Real Betis",
-    lugar: "Santiago Bernabeu",
-    precio: 50.00,
-    total_entradas: 30000,
-    id: "RealBet"
-};*/
-
-var entradasPartido = localStorage.getItem('partidos');
-
-const entradas = JSON.parse(entradasPartido);
-console.log(entradas);
 const carrito = [];
-desplegableEntradas();
-
-/*
-function mostrarEntradas() {
-    console.log(" ");
-    for (var i = 0; i < entradas.length; i++) {
-        var totalEntradas = document.getElementById("entradas-disponibles");
-        var entrada = document.createElement("DIV");
-        entrada.className = "entrada";
-        totalEntradas.appendChild(entrada);
-
-        var titulo = document.createElement("H3");
-        titulo.innerText = entradas[i].titulo;
-        entrada.appendChild(titulo);
-
-        var identificador = document.createElement("P");
-        identificador.className = "id-entrada";
-        identificador.innerText = entradas[i].id;
-        entrada.appendChild(identificador);
-
-        var lugar = document.createElement("P");
-        lugar.className = "datos-entrada";
-        lugar.innerText = entradas[i].lugar;
-        entrada.appendChild(lugar);
-
-        var hora = document.createElement("P");
-        hora.className = "datos-entrada";
-        hora.innerText = entradas[i].hora;
-        entrada.appendChild(hora);
-
-        var fecha = document.createElement("P");
-        fecha.className = "datos-entrada";
-        fecha.innerText = entradas[i].fecha;
-        entrada.appendChild(fecha);
-
-        var cantidad = document.createElement("P");
-        fecha.className = "datos-entrada";
-        cantidad.innerText = "Entradas disponibles: "+entradas[i].total_entradas;
-        entrada.appendChild(cantidad);
-        
-        var precio = document.createElement("P");
-        precio.className = "precio-entrada";
-        precio.innerText = entradas[i].precio;
-        entrada.appendChild(precio);
-        
-    }//end for
-
-    desplegableEntradas();
-}
-*/
-
-//Imprime todas las entradas disponibles dentro de un select
-function desplegableEntradas() {
-    //Recorremos el array con las entradas
-    for(var i = 0; i < entradas.length; i++ ) {
-        //seleccionamos la etiqueta select del DOM
-        var selector = document.getElementById("selectorEntradas");
-        //Por cada entrada creamos un elemento option
-        //y le insertamos el contenido
-        var idEntradas = document.createElement("OPTION");
-        idEntradas.value = entradas[i].id;
-        idEntradas.innerHTML = entradas[i].titulo + " ("+ entradas[i].id 
-        + ")"; 
-        //lo insertamos dentro del select
-        selector.appendChild(idEntradas);
-    }
-
-}
 
 function validacionCantidad() {
     //seleccionamos el select del dom
@@ -125,6 +33,7 @@ function validacionCantidad() {
         var indiceProducto = carrito.findIndex(i => i.id === producto.id);
 
         if (indiceProducto >= 0) {
+            //si encuentra el id dentro del carrito cambia a true
             estaProducto = true;
         }
 

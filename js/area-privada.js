@@ -1,20 +1,15 @@
 //Variable contador
 var contador = 3;
 
-
+guardado();
 
 //guardar array en local
 
 function guardado() {
-    
-    var memoria = localStorage.getItem("partidos");
-    console.log("lospartidos : ", JSON.parse(memoria));
 
     //cookies con los usuarios y contraseñas
     var usushow = localStorage.getItem("nombre");
     var passhow = localStorage.getItem("pass");
-    console.log(usushow);
-    console.log(passhow);
     document.getElementById("nameUser").value = usushow;
     document.getElementById("passwordUser").value = passhow;
 
