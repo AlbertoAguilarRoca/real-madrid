@@ -1,5 +1,5 @@
 
-const entrada1 = {
+/*const entrada1 = {
     fecha:"24/10/2021",
     hora:"20:00",
     titulo:"Barcelona - Real Madrid",
@@ -17,11 +17,16 @@ const entrada2 = {
     precio: 50.00,
     total_entradas: 30000,
     id: "RealBet"
-};
+};*/
 
-const entradas = [entrada1,entrada2];
+var entradasPartido = localStorage.getItem('partidos');
+
+const entradas = JSON.parse(entradasPartido);
+console.log(entradas);
 const carrito = [];
+desplegableEntradas();
 
+/*
 function mostrarEntradas() {
     console.log(" ");
     for (var i = 0; i < entradas.length; i++) {
@@ -68,6 +73,7 @@ function mostrarEntradas() {
 
     desplegableEntradas();
 }
+*/
 
 //Imprime todas las entradas disponibles dentro de un select
 function desplegableEntradas() {

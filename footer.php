@@ -46,6 +46,7 @@
         <script src="js/main.js"></script>
         <script src="js/sorteo.js"></script>
         <script src="js/area-privada.js"></script>
+        <script src="js/crear-Entradas.js"></script>
         
     </body>
 </html>
