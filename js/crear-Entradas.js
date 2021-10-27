@@ -52,7 +52,11 @@ function crearPartidos() {
 }
 
 function guardararray(){
-    for (var i = 0; i < entradas.length; i++) {
+    if(entradas.length > 0) {
+        for (var i = 0; i < entradas.length; i++) {
+            localStorage.setItem("partidos", JSON.stringify(entradas));
+        }
+    } else {
         localStorage.setItem("partidos", JSON.stringify(entradas));
     }
 }
