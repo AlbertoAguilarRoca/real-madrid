@@ -173,6 +173,22 @@
     margin-bottom: 0;
 }
 
+.compraExito {
+    padding: 10px;
+    background-color: rgb(36, 163, 36);
+    margin: 15px;
+    height: 0;
+    overflow: hidden;
+    transition: 1s;
+    display: none;
+}
+
+.compraExito h3 {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
 /*luis*/
 
  

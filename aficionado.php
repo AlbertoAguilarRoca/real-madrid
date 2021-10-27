@@ -10,6 +10,7 @@
 
         <!-- CSS bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
         <!-- ALGUNOS ESTILOS BASE -->
         <link rel="stylesheet" href="css/main.css">
         <!-- NUESTRO CSS -->
@@ -118,10 +119,11 @@
                     <h2>Entradas de los próximos partidos</h2>
 
                     <p>Selecciona tu entrada y cómprala ;)</p>
-                    
+
                     <select id="selectorEntradas" class="selectEntradas">
 
                     </select>
+
                     <input id="cantidadEntradas" class="cantidad" type="number" min="1" value="1">
                     <input class="boton-aficionado" type="submit" 
                     value="Añadir al carrito" onclick="validacionCantidad()">
@@ -142,8 +144,12 @@
                         <p id="precioCarrito"></p>
                     </div>
                     <div class="botonCompra">
-                        <button class="boton-aficionado">Finalizar compra</button>
+                        <button onclick="actualizarEntradas()" class="boton-aficionado"><i class="bi bi-bag"></i> Finalizar compra</button>
                     </div>
+                </div>
+                <!-- Confirmación de compra -->
+                <div class="compraExito" id="purchaseSuccesful">
+                    <h3><i class="bi bi-check-all"></i> Compra realizada con éxito</h3>
                 </div>
             </div>
 

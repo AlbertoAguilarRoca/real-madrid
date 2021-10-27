@@ -1,18 +1,8 @@
 
 //Array que almacena las entradas creadas
 const entradas = [];
-var entradasPartido = localStorage.getItem('partidos');
-const aux = JSON.parse(entradasPartido);
-
-//Guardamos la informacion del localstorage dentro un array auxiliar,
-//para despues pasarla al array entradas
-for (var i = 0; i < aux.length; i++) {
-    
-    entradas[i] = aux[i];
-    
-}
-
-
+//Recoge la información del localstorage y la guarda dentro del array
+recogeEntradas();
 //Funcion que muestra las entradas en un select, tanto en la 
 //pagina de aficionados con el area privada
 
@@ -49,6 +39,17 @@ function crearPartidos() {
 
     return entrada;
 
+}
+
+function recogeEntradas() {
+    var entradasPartido = localStorage.getItem('partidos');
+    const aux = JSON.parse(entradasPartido);
+
+    //Guardamos la informacion del localstorage dentro un array auxiliar,
+    //para despues pasarla al array entradas
+    for (var i = 0; i < aux.length; i++) {       
+        entradas[i] = aux[i];        
+    }
 }
 
 function guardararray(){
