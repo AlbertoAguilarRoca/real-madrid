@@ -174,19 +174,33 @@
 }
 
 .compraExito {
-    padding: 10px;
     background-color: rgb(36, 163, 36);
     margin: 15px;
+    color: white;
     height: 0;
     overflow: hidden;
     transition: 1s;
-    display: none;
 }
 
 .compraExito h3 {
     color: white;
     font-size: 20px;
     text-align: center;
+}
+
+.lista-compra {
+    padding-top: 15px;
+}
+
+.lista-compra li {
+    padding: 5px 0;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.mostrarMensaje {
+    padding: 15px 25px !important;
+    height: initial !important;
 }
 
 /*luis*/
