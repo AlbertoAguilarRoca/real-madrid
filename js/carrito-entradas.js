@@ -82,6 +82,7 @@ function borrarProducto(event) {
         }
     }
 
+    //actualiza la información del carrito en la sesionStorage
     almacenaCarrito();
     
     
@@ -215,11 +216,13 @@ function actualizarEntradas() {
     //borramos el contenido html del carrito
     const carritoComprado = document.getElementById("carrito");
     borraElementosHTML(carritoComprado);
+
+    //mostramos los elementos comprados (mensaje de exito)
+    mensajeExito();
     
     //borramos la información del array carrito
     carrito.splice(0, carrito.length);
 
-    mensajeExito();
     calcularTotal();
 }
 
@@ -231,6 +234,39 @@ function borraElementosHTML(elementoPadre) {
 }
 
 function mensajeExito() {
+    //seleccionamos la caja donde se mostrará el mensaje de exito
     var cajaExito = document.getElementById("purchaseSuccesful");
-    cajaExito.style = "display: block ;height: initial;";
+    //incluimos una clase para mostrar el mensaje
+    cajaExito.className = "compraExito mostrarMensaje";
+
+    var cajaLista = document.getElementById("lista-Entradas-Compradas");
+    //Creamos la lista de elementos comprados
+    var ulLista = document.createElement("UL");
+    ulLista.className = "lista-compra";
+    ulLista.id = "productosComprados";
+    cajaLista.appendChild(ulLista);
+
+    //Recorremos el array carrito para ir imprimiendo la lista
+    for(var i = 0; i < carrito.length; i++) {
+        //generamos el elemento Li
+        var entradaComprada = document.createElement("LI");
+        //le metemos el contenido
+        entradaComprada.innerText = carrito[i].titulo + 
+        " (" + carrito[i].cantidad + ")";
+        //lo incluimos dentro del ul
+        ulLista.appendChild(entradaComprada);
+    }
+
+    //Guardamos en una variable el precio total
+    var precioCarrito = document.getElementById("precioCarrito").innerText;
+    //le incluimos el total de la compra
+    document.getElementById("totalPagado").innerText = precioCarrito;
+
+    //por ultimo, establecemos un timeout para volver a borrar el mensaje
+    //a los cinco segundos
+    setTimeout(function(){ 
+        cajaExito.classList.remove("mostrarMensaje");
+        ulLista.remove();
+    }, 5000);
+
 }
