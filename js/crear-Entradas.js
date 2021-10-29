@@ -24,7 +24,7 @@ function crearPartidos() {
         }    
     }
 
-    //var que recoge el valor introducido en el input fecha
+    //var que recogen los valores introducidos en los input's.
     var fechatikect = document.getElementById("fecha").value;
     var horaticket=document.getElementById("hora").value;
     var tituloticket =document.getElementById("titulo").value
@@ -32,11 +32,12 @@ function crearPartidos() {
     var precioticket =document.getElementById("precio").value;
     var numeroticket =document.getElementById("num").value;
     var identificador = document.getElementById("identificador").value;
+    //creamos la variable validar
     var validar = true;
         //creamos un for que recorre el array validando si la id que contienen coincide con la id introducida
    for(var i = 0;i<entradas.length;i++){
-       if (entradas[i]["id"] == identificador ) {
-           //creamos la variable validar de modo que si coincide se ponga a false          
+       if (entradas[i].id == identificador ) {
+           //si el id de alguna entrada coincide con la introducida.           
            var validar = false;
        }
    }
@@ -69,7 +70,9 @@ function crearPartidos() {
 }
 
 function recogeEntradas() {
+    //recogemos los datos dentro del storage en la variable entradasPartido
     var entradasPartido = localStorage.getItem('partidos');
+    //con la constante aux guardamos los datos del storage parseados.
     const aux = JSON.parse(entradasPartido);
 
     //Guardamos la informacion del localstorage dentro un array auxiliar,
@@ -79,7 +82,11 @@ function recogeEntradas() {
     }
 }
 
+// guardamos el array en el storage
 function guardararray(){
+    /* creamos el if de modo que si el array es mayor de 0 recorre todo el 
+    array con la lista partidos y los guarda en el storage
+    sino es que solo tiene un elemento y guarda solo el que tiene.*/
     if(entradas.length > 0) {
         for (var i = 0; i < entradas.length; i++) {
             localStorage.setItem("partidos", JSON.stringify(entradas));
@@ -89,23 +96,28 @@ function guardararray(){
     }
 }
 
+
 function agregarPartido() {
    
     //guardamos en validacion el elemento de valido que es un p
         var validacion = document.getElementById("valido");
         
-        //creamos en agregar partido un if de modo que si crearPartidosdevuelve un if es que entro en el if de comprobante  
+        /*creamos en agregar partido un if de modo que si crearPartidos devuelve false es 
+        que entro en el if de comprobante,entrando en este if y saltando el mensaje de error,
+        sino entra en el else y crea el objeto de entrada*/ 
         if (!crearPartidos()) {
-           
-    
             validacion.textContent = "No puede introducir valores vacios o nulos";
-            validacion.style.color = "red";
-            
+            validacion.style.color = "red";         
         }else{
+            //si entra en el else y encontramos algun mensaje  en validacion lo sustituye
             validacion.textContent = "";
+            // guardamos en la variable nuevo partido la entrada creada
             var nuevoPartido = crearPartidos();
+            // en el array de entradas le hacemos un push de la nueva entrada creada
             entradas.push(nuevoPartido);
+            //llamamos a guardar array para que guarde el array creado
             guardararray();
+            // generamos el div con las entradas creadas
             generaEntradasHTML(entradas.length-1);
         }
        
