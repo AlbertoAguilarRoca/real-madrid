@@ -142,7 +142,7 @@ function desplegableEntradas() {
 }
 
 
-
+//funcion que reccore el array de entradas y genera el contenido en html
 function mostrarEntradas() {
     console.log("");
     for (var i = 0; i < entradas.length; i++) {
@@ -174,12 +174,20 @@ function borrarPartido() {
 
 }
 
+//genera una entrada en html en base a la informacion del array
+//entradas en un indice concreto
 function generaEntradasHTML(indice) {
+    //localizamos el div Padre donde queremos que se inserte el contenido
     var totalEntradas = document.getElementById("entradas-disponibles");
+    //creamos un nuevo div que contenga toda la informacion de la entrada
     var entrada = document.createElement("DIV");
+    // a ese nuevo elemento le asociamos la clase entrada
     entrada.className = "entrada";
+    //por ultimo insertamos el elemento creado dentro del div padre
     totalEntradas.appendChild(entrada);
 
+    //vamos generando las etiquetas que van a contener la informacion de la entrada 
+    // y la vamos insertando dentro del div padre
     var titulo = document.createElement("H3");
     titulo.innerText = entradas[indice].titulo;
     entrada.appendChild(titulo);
