@@ -136,6 +136,7 @@
 
    <label class="labelEntradas">Identificador</label>
    <input type="text" id="identificador"required>
+   <p id="valido"></p>
 
     <div class="subirEntrada">
         <button  class="boton-aficionado" onclick="agregarPartido()">Agregar entrada</button>

@@ -32,12 +32,39 @@ function crearPartidos() {
     var precioticket =document.getElementById("precio").value;
     var numeroticket =document.getElementById("num").value;
     var identificador = document.getElementById("identificador").value;
+    var validar = true;
+        //creamos un for que recorre el array validando si la id que contienen coincide con la id introducida
+   for(var i = 0;i<entradas.length;i++){
+       if (entradas[i]["id"] == identificador ) {
+           //creamos la variable validar de modo que si coincide se ponga a false          
+           var validar = false;
+       }
+   }
+  
+    // creamos la variable comprobante y la validamos a true.  
+    var comprobante = true;
+    /*creamos un if que valide que todos los campos esten llenos y que la id no coincide mediante la variable validar,
+    si la variable validar es false es que coincide por lo tanto entra en el if
+    si los campos estan vacios o id repetida entra en if, comprobante lo pone a false y retorna comprobante,
+    sino entra en el else y crea la entrada.
+    */
+    if (fechatikect == "" || horaticket == "" || tituloticket == "" || lugarticket == "" || 
+    precioticket == "" || numeroticket == "" || identificador == "" || !validar) {
+        
+        comprobante = false;
+        return comprobante;     
 
+    } else{
 
+        
+    // creamos el objeto partidos.
     var entrada= new Partidos(fechatikect,horaticket,tituloticket,lugarticket,
     precioticket,numeroticket,identificador);
 
+    //retornamos el objeto creado
     return entrada;
+
+}
 
 }
 
@@ -63,11 +90,26 @@ function guardararray(){
 }
 
 function agregarPartido() {
-    var nuevoPartido = crearPartidos();
-    entradas.push(nuevoPartido);
-    guardararray();
-    generaEntradasHTML(entradas.length-1);
-}
+   
+    //guardamos en validacion el elemento de valido que es un p
+        var validacion = document.getElementById("valido");
+        
+        //creamos en agregar partido un if de modo que si crearPartidosdevuelve un if es que entro en el if de comprobante  
+        if (!crearPartidos()) {
+           
+    
+            validacion.textContent = "No puede introducir valores vacios o nulos";
+            validacion.style.color = "red";
+            
+        }else{
+            validacion.textContent = "";
+            var nuevoPartido = crearPartidos();
+            entradas.push(nuevoPartido);
+            guardararray();
+            generaEntradasHTML(entradas.length-1);
+        }
+       
+    }
 
 
 //Imprime todas las entradas disponibles dentro de un select
@@ -161,3 +203,4 @@ function generaEntradasHTML(indice) {
     price.innerText = entradas[indice].precio;
     entrada.appendChild(price); 
 }
+
