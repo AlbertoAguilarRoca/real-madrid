@@ -50,7 +50,7 @@ function crearPartidos() {
     sino entra en el else y crea la entrada.
     */
     if (fechatikect == "" || horaticket == "" || tituloticket == "" || lugarticket == "" || 
-    precioticket == "" || numeroticket == "" || identificador == "" || !validar) {
+    precioticket == "" || numeroticket == "" || identificador == "" || !validar || precioticket <= 0 || numeroticket <= 0) {
         
         comprobante = false;
         return comprobante;     
