@@ -117,7 +117,7 @@
     <h3>A través del siguiente formulario podrá generar nuevas entradas.</h3>
 
    <label class="labelEntradas">Fecha del partido</label>
-   <input type="date" id="fecha" required>
+   <input type="date" id="fecha" min="<?php echo date('Y-m-d'); ?>" required>
 
    <label class="labelEntradas">Hora del partido</label>
     <input type="time" id="hora" required>
@@ -136,6 +136,7 @@
 
    <label class="labelEntradas">Identificador</label>
    <input type="text" id="identificador"required>
+   <p id="valido"></p>
 
     <div class="subirEntrada">
         <button  class="boton-aficionado" onclick="agregarPartido()">Agregar entrada</button>

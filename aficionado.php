@@ -150,6 +150,12 @@
                 <!-- Confirmación de compra -->
                 <div class="compraExito" id="purchaseSuccesful">
                     <h3><i class="bi bi-check-all"></i> Compra realizada con éxito</h3>
+                    <div id="lista-Entradas-Compradas">
+
+                    </div>
+                    <div class="precioTotal">
+                        <p id="totalPagado"></p>
+                    </div>
                 </div>
             </div>
 
