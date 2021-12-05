@@ -1,20 +1,10 @@
-<!doctype html>
-<html lang="ES">
+<?php include 'header.php'; ?>
 
-<head>
-    <script src="js/comentarios.js"></script>
 
-    <!-- ALGUNOS ESTILOS BASE -->
 
-    <link rel="stylesheet" href="css/main.css">
+<div id="contenido"></div>
 
-</head>
 
-<body>
-    <div>
-        <button onclick="solicitar()">Solicitar Usuarios</button>
-        <div id="resultado"></div>
-    </div>
-</body>
 
-</html>
+<script src="js/comentarios.js"></script>
+<?php include 'footer.php'; ?>
