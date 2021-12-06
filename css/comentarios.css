@@ -1,0 +1,30 @@
+.labelForm {
+    display: block;
+    padding: 10px 0;
+}
+
+.tituloForm, .cuerpoComentario {
+    width: 33%;
+    padding: 10px;
+}
+
+.botonForm {
+    display: block;
+    background: #004996;
+    color: white;
+    font-weight: bold;
+    border: none;
+    transition: 0.5s;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.usuarioTitulo {
+    color: #004996;
+    padding-bottom: 10px;
+}
+
+.comentarioTitulo {
+    font-size: 22px;
+    padding-bottom: 5px;
+}

@@ -56,7 +56,7 @@
                             <li class="menu-nav-element"><a href="#">Baloncesto</a></li>
                             <li class="menu-nav-element"><a href="#">El club</a></li>
                             <li class="menu-nav-element"><a href="aficionado.php">Aficionados</a></li>
-                            <li class="menu-nav-element"><a href="#">Estadio</a></li>
+                            <li class="menu-nav-element"><a href="comentarios.php">Comentarios</a></li>
                         </ul>
                     </nav>
                     <ul class="menu-right">
